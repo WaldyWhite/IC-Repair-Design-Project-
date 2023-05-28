@@ -105,7 +105,7 @@
 }
 
 .first-container {
-    background-image: url("/images/image4.3.jpg");
+    background-image: url("../images/image4.3.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     font-family: 'Yeseva One';
@@ -266,11 +266,11 @@
 }
 
 .swiper-button-next:hover {
-    background-image: url(/images/VectorNext.Hover.svg);
+    background-image: url("../images/VectorNext.Hover.svg");
 }
 
 .swiper-button-prev:hover {
-    background-image: url(/images/VectorPrev.Hover.svg);
+    background-image: url("../images/VectorPrev.Hover.svg");
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet { 
@@ -298,11 +298,11 @@
 
 .swiper-button-next {
 
-    background-image: url(/images/VectorNext.svg);
+    background-image: url("../images/VectorNext.svg");
 }
 
 .swiper-button-prev {
-    background-image: url(/images/VectorPrev.svg);
+    background-image: url("../images/VectorPrev.svg");
 }
 
 
@@ -330,7 +330,7 @@
     margin: 0 auto;
     width: 818px;
     height: 434px;
-    background-image: url(/images/video.jpg);
+    background-image: url("../images/video.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 38px;
@@ -463,7 +463,7 @@ form span {
 }
 
 #checkbox-id:checked + .new-checkbox::before {
-    background-image: url(/images/forCheckbox.svg);
+    background-image: url("../images/forCheckbox.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 12px 12px;
@@ -480,7 +480,7 @@ form span {
 .box-logo {
     width: 257px;
     height: 67px;
-    background-image: url(/images/types_of_repair.svg);
+    background-image: url("../images/types_of_repair.svg");
     background-size: cover;
     margin: 0 auto ;
 }
@@ -509,16 +509,16 @@ form span {
 }
 
 .types-item1 {
-    background-image: url(/images/image.item1.jpg);
+    background-image: url("../images/image.item1.jpg");
 
 }
 
 .types-item2 {
-    background-image: url(/images/image.item2.jpg);
+    background-image: url("../images/image.item2.jpg");
 }
 
 .types-item3 {
-    background-image: url(/images/image.item3.jpg);
+    background-image: url("../images/image.item3.jpg");
 }
 
 .lists-box {
@@ -584,7 +584,7 @@ form span {
 .free-services {
     width: 1006px;
     height: 645px;
-    background-image: url(/images/image\ 6.1.png);
+    background-image: url("../images/image\ 6.1.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
