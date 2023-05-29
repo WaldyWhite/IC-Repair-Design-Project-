@@ -9,10 +9,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    border: none;
 }
 
-
-   .button {
+.button {
     width:162px;
     height:37px ;
     background: #E3B873;
@@ -34,6 +34,8 @@
     border-radius: 2px;
 }
 
+/*----------------------------------------------------------*/
+
 .fix-container {
     max-width: 1440px;
     margin:0 auto;
@@ -49,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #131313;
-    padding:24px 86px 22px 90px;
+    padding:24px 90px 22px 90px;
     margin: 0 auto;
 
 }
@@ -166,7 +168,7 @@
     margin-bottom: 51px;
 }
 
-.rom-list_item {
+.room-list_item {
     margin-right: 61px;
 }
 
@@ -178,7 +180,7 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-.room-list a:hover {
+.room-list a:hover, .class-items a:hover {
     padding-bottom: 6px;
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
@@ -213,7 +215,7 @@
     font-size: 14px;
     line-height: 27px;
 }
-/*------------Swiper----------*/
+/*------------ Swiper ----------*/
 .swiper{
     width: 420px;
     height: 269px;
@@ -315,7 +317,6 @@
 /*---------- / Swiper ----------*/
 /*-----------------------------Third Container--------------------------------------*/
 
-
 .third-container {
     margin-top: -222px;
     margin-left: 2px;
@@ -358,10 +359,10 @@
     padding-top: 15px;
 }
 
-/*---------- Form --------------*/
+/*---------- Form 1 --------------*/
 .form{
     margin-left: 336px;
-    margin-right: 330px;
+    margin-right: 334px;
 }
 
 form {
@@ -373,13 +374,13 @@ form {
     flex-wrap: wrap;
 }
 
-form span {
+.label-form1, .label-form2 {
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
 }
 
-.form-name, .form-phone  {
+.form-inputs  {
     display: flex;
     flex-direction: column;
 }
@@ -390,7 +391,7 @@ form span {
     line-height: 23px;
     height: 26px;
     outline: none;
-    border: none;
+
     width: 236px;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
@@ -400,6 +401,7 @@ form span {
 }
 
 .dt-submit {
+    padding-top: 4px;
     width: 200px;
     height: 51px;
     font-style: normal;
@@ -430,7 +432,7 @@ form span {
     flex-direction: row;
 }
 
-#checkbox-id {
+#checkbox-id, #checkbox2-id {
     display: none;
 
 }
@@ -449,6 +451,7 @@ form span {
     height: 18px;
     position: relative;
     border-radius: 1px;
+    background-color: #E3B873;
 }
 
 .new-checkbox::before {
@@ -457,9 +460,7 @@ form span {
     display: block;
     width: 16px;
     height: 16px;
-    background-color: #E3B873;
     opacity: 0;
-
 }
 
 #checkbox-id:checked + .new-checkbox::before {
@@ -523,7 +524,7 @@ form span {
 
 .lists-box {
     padding-top: 22px;
-    padding-left: 33px;
+    padding-left: 30px;
     padding-bottom: 44px;
     margin: 0 auto;
     width: 330px;
@@ -556,19 +557,23 @@ form span {
     background-color:rgba(54, 54, 54, 0.5);
 }
 
-.types-buttons {
-    margin-left: 33px;
+.types-labels {
+    margin-left: 30px;
     margin-top: -27px;
 }
 
-.bt-types {
-    padding:0;
+.label-types {
+    width: 229px;
+    height: 54px;
+    padding: 0px;
+    padding-top: 17px;
+    text-transform: uppercase;
+    text-align: center;
     font-family: 'Yeseva One';
     font-style: normal;
     font-size: 18px;
-    border-radius: 0;
-    width: 228px;
-    height: 54px;
+    color: #fff;
+    background: #E3B873;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
@@ -578,7 +583,7 @@ form span {
     flex-direction: row;
     justify-content: center;
     padding-top: 1px;
-    padding-left: 1px;
+    padding-left: 0px;
 }
 
 .free-services {
@@ -591,11 +596,11 @@ form span {
 
 .form-conteiner {
     padding-top: 106px;
-    padding-right: 95px;
+    padding-right: 98px;
 
 }
 .request-form {
-    width: 507px;
+    width: 508px;
     height: 510px;
     padding-top: 27px;
     background-color: #131313;
@@ -609,7 +614,258 @@ form span {
     height: 47px;
     margin: 0 auto;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 27px;
     text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+}
+/*-------------------- Second-Form -------------------*/
+.second-form {
+    padding: 0 49px 0 49px;
+    display: block;
+}
+
+.label-form2 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+    line-height: 29px;
+    letter-spacing: 0.3px;
+    width: 410px;
+    margin-bottom: 47px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #131313;
+    color: #FFFFFF;
+}
+
+.input::placeholder , .checkbox2-text{
+    color: #FFFFFF;
+}
+
+.checkbox-box2 {
+    margin-top: -31px;
+    margin-left: 0px;
+    margin-bottom: 32px;
+}
+#checkbox2-id:checked + .new-checkbox::before {
+    background-image: url("../images/forCheckbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    opacity: 1;
+}
+
+.checkbox2-text {
+    font-size: 14px;
+    line-height: 23px;
+    margin-left: 5px;
+}
+
+.dt-form2 {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    margin-left: 195px;
+    width: 214px;
+    height: 51px;
+}
+
+/*-------------------------------------------*/
+
+.help-logo {
+    margin-left: 847px;
+    padding-bottom: 204px;
+}
+
+/*----------------------- Fifth Container -----------*/
+.fifth-container {
+    margin: 0 auto;
+    background-image: url("../images/image\ 5.1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fifth-container-opasity {
+    display: flex;
+    flex-direction: row;
+    padding-top: 136px;
+    padding-bottom: 50px;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.list-container {
+    margin-bottom: 42px;
+}
+.room-classes {
+    margin-left: 99px;;
+}
+
+.classes-title {
+    font-family: 'Yeseva One';
+    text-transform: uppercase;
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 37px;
+}
+
+.class-items {
+    margin-bottom: 12px;
+}
+
+.class-items a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 37px;
+}
+
+.class-items a:hover {
+    padding-bottom: 2px;
+}
+.room-images {
+    max-width: 722px;
+    height: 1059px;
+    margin-left: 544px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -978px;
+
+}
+
+.images-box1 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.images-box2 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.room-images img  {
+    padding-bottom: 39px;
+    padding-left: 43px;
+    width: 398px;
+}
+
+.img-1 {
+    height: 598px;
+}
+
+.img-2 {
+    height: 313px;
+}
+.img-3 {
+    height: 664px;
+}
+.img-4 {
+    height: 389px;
+}
+/*-------------- Our Clients --------------------*/
+.our-clients {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 28px;
+
+}
+
+.our-clients-title {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #181818;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.our-clients-text {
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 39px;
+}
+
+.cliens-cards {
+    padding: 0px 103px 0 103px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    padding-top: 25px;
+    padding-left: 19px;
+    text-align: left;
+    width: 374px;
+    height: 428px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);  
+}
+
+.client-photo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.client-photo img {
+    margin-right: 22px;
+    display: inline;
+    border-radius: 50px;
+}
+
+.cliet-name {
+    padding-top:15px;
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.card-text {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    width: 327px;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+}
+
+.card-labels {
+    margin-left: -1px;
+    margin-top: -25px;
+}
+.card-label {
+    display:flex;
+    flex-direction: row;
+    width: 295px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.line-vetrical {
+    margin-left: 22px;
+    width: 1px;
+    height: 54px;
+    background-color: #ffffff;
+}
+
+.notepad, .vector {
+    margin-top: 10px;
+    margin-left: 18px;
+    width: 32px;
+    height: 32px;
+}
+
+.card-label p {
+    padding-left: 14px;
+    padding-top: 14px;
+    font-family: 'Yeseva One';
+    font-size: 17px;
+    line-height: 24px;
     color: #FFFFFF;
 }
