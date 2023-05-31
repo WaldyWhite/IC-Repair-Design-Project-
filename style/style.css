@@ -27,6 +27,7 @@
     text-transform: uppercase;
     font-size: 11px;
     text-align: center;
+    transition: all 0.4s;
 }
 
 .dt-submit {
@@ -423,6 +424,7 @@
     height: 86px;
     border-radius: 50px;
     background-color: #E3B873;
+    transition: all 0.3s;
 }
 
 .video-play img{
