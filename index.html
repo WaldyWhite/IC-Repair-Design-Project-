@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Repair</title>
 </head>
@@ -22,7 +22,7 @@
                     <li class="nav-item"><a href="#">TEAM</a></li>
                     <li class="nav-item"><a href="#">REVIEWS</a></li>
                     <li class="nav-item"><a href="#">CONTACTS</a></li>
-                    <li class="nav-item tel"><a href="#">+7 (928) 768-32-39</a></li>
+                    <li class="nav-item tel"><a href="tel:+79287683239">+7 (928) 768-32-39</a></li>
                 </ul>
             </nav>
             <button class="button bt-nav">Request a call</button>
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                     <div class="room-image">
-                        <img src="./images/image 2.1.jpg" alt="Room Image">
+                        <img src="./images/image2.1.jpg" alt="Room Image">
                     </div>
                 </div>
                 <div class="online-logo">
@@ -148,11 +148,11 @@
         </div>
         <div class="fix-container">
             <div class="third-container">
-                <div class="video">
-                    <div class="opacity-video"><img src="./images/PlayLogo 8.png" alt="Play"></div>
+                <div  class="video" >
+                    <div class="opacity-video" ><button class="video-play" onclick="event.stopPropagation()"><img src="./images/PlayLogo8.svg" alt="Play"></button></div>
                 </div>
                 <div class="video-Control-descript">
-                    <img src="./images/Rectangle 6.9.svg" alt="Rectangle">
+                    <img src="./images/Rectangle6.9.svg" alt="Rectangle">
                     <p class="text-cont-deskript">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                         <br> Leave a request below and you will receive a link to the broadcast.</p>
                 </div>
@@ -169,7 +169,7 @@
                         <button type="submit" class="button dt-submit">Submit</button>
                         <div class="checkbox-box">
                             <label class="label">
-                                <input type="checkbox" name="checkbox" id="checkbox-id">
+                                <input type="checkbox" name="checkbox" class="checkbox checkbox1">
                                 <span class="new-checkbox"></span>
                                 <span class="checkbox-text ">I agree to the processing of personal data</span>
                             </label>
@@ -245,20 +245,20 @@
                         </div>
                         <form action="#" method="post" class="second-form">
                             <div class="form-inputs">
-                                <label class="label-form2">Name</label>
-                                <input type="text" name="name" placeholder="What is your name:" class="input" autocomplete="off">
+                                <label class="label-form2" for="name2">Name</label>
+                                <input type="text" name="name" placeholder="What is your name:" class="input" autocomplete="off" id="name2">
                             </div>
                             <div class="form-inputs">
-                                <label class="label-form2">Phone</label>
-                                <input type="text" name="phone" placeholder="Your phone number:" class="input" autocomplete="off">
+                                <label class="label-form2" for="phone2">Phone</label>
+                                <input type="text" name="phone" placeholder="Your phone number:" class="input" autocomplete="off" id="phone2">
                             </div>
                             <div class="form-inputs">
-                                <label class="label-form2" for="email">Email</label>
-                                <input type="email" name="email" placeholder="Your email:" class="input" autocomplete="off">
+                                <label class="label-form2" for="email" >Email</label>
+                                <input type="email" name="email" placeholder="Your email:" class="input" autocomplete="off" id="email">
                             </div>
-                            <div class="checkbox-box2">
-                                <label class="label-form2">
-                                    <input type="checkbox" name="checkbox" id="checkbox2-id">
+                            <div class="checkbox-box checkbox-box2">
+                                <label class="label label-form2">
+                                    <input type="checkbox" name="checkbox"  class="checkbox checkbox2 ">
                                     <span class="new-checkbox"></span>
                                     <span class="checkbox2-text">I agree to the processing of personal data</span>
                                 </label>
@@ -297,15 +297,15 @@
             </div>
             <div class="room-images">
                 <div class="images-box1">
-                    <img src="./images/image 5.jpg" alt="Room" class="img-1">
-                    <img src="./images/image 54.jpg" alt="Room" class="img-4">
+                    <img src="./images/image5.jpg" alt="Room" class="img-1">
+                    <img src="./images/image54.jpg" alt="Room" class="img-4">
                 </div>
                 <div class="images-box2">
-                    <img src="./images/image 52.jpg" alt="Room" class="img-2">
-                    <img src="./images/image 53.jpg" alt="Room" class="img-3">
+                    <img src="./images/image52.jpg" alt="Room" class="img-2">
+                    <img src="./images/image53.jpg" alt="Room" class="img-3">
                 </div>
             </div>
-            <div class="fix-container">
+            <div class="fix-container backgraund-cyti">
                 <div class="our-clients">
                     <h3 class="our-clients-title">our clients</h3>
                     <img class="our-clients-logo" src="./images/clietsLogo.svg" alt="logo" >
@@ -384,12 +384,78 @@
                         </div>
                     </div>
                 </div>
+                <div class="backgraund-images">
+                    <img src="./images/City.png" alt="City">
+                    <img src="./images/City.gespiegelt.png" alt="City">
+                </div>
             </div>
-
-
-
+            <div class="questions-form-container">
+                <h2 class="qs-title">have any questions?</h2>
+                <div class="questions-form-box">
+                    <form action="#" method="post" class="qs-form">
+                        <div class="form-inputs qs-name-in">
+                            <label class="label-form2" for="name3">Name</label>
+                            <input type="text" name="name" placeholder="What is your name:" class="input qs-input " autocomplete="off" id="name3">
+                        </div>
+                        <div class="form-inputs qs-phone-in ">
+                            <label class="label-form2" for="phone3">Phone</label>
+                            <input type="text" name="phone" placeholder="Your phone number:" class="input qs-input" autocomplete="off" id="phone3">
+                        </div>
+                        <div class="form-inputs qs-text-in">
+                            <label class="label-form2" for="text">Question</label>
+                            <input type="text" name="text" placeholder="I want to know:" class="input qs-input qs-text" autocomplete="off" id="text">
+                        </div>
+                        <div class="qs-checkbox">
+                        <div class="checkbox-box checkbox-box3">
+                            <label class="label label-form3">
+                                <input type="checkbox" name="checkbox"  class="checkbox checkbox3">
+                                <span class="new-checkbox"></span>
+                                <span class="checkbox2-text">I agree to the processing of personal data</span>
+                            </label>
+                        </div>
+                        </div>
+                        <button type="submit" class="button dt-submit bt-qustion">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="fix-container">
+            <div class="sixth-container">
+                <div class="sixth-container-opasity">
+                    <h2>Rostov-on-Don, Nansen St., 239 Shopping Center<br>
+                        Decorum Tel +7 (928) 768 32 29</h2>
+                    <div class="email-insta">
+                        <a href="mailto:vlad@muster.com" class="email-link">
+                            <img src="./images/cirquit.Email.svg" alt="logo email">
+                        </a>
+                        <a href="https://www.instagram.com/waldywhite/" class="insta-link">
+                            <img src="./images/cirquit.Insta.svg" alt="logo insta">
+                        </a>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1138.8115135868577!2d39.72164787213972!3d47.2446441529397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47ac4fd0b%3A0xcc39a9f1a09d4979!2sUlitsa%20Nansena%2C%20239%2C%20Rostov%2C%20Rostovskaya%20oblast&#39;%2C%20Russia%2C%20344038!5e0!3m2!1sen!2sch!4v1685544008020!5m2!1sen!2sch" width="925" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <footer class="fix-container">
+        <div class="header footer">
+            <div class="logo">IC " Repair Design Projeckt "</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">HOME</a></li>
+                    <li class="nav-item"><a href="#">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#">MEASUREMENT</a></li>
+                    <li class="nav-item"><a href="#">TEAM</a></li>
+                    <li class="nav-item"><a href="#">REVIEWS</a></li>
+                    <li class="nav-item"><a href="#">CONTACTS</a></li>
+                    <li class="nav-item tel"><a href="#">+7 (928) 768-32-39</a></li>
+                </ul>
+            </nav>
+            <button class="button bt-nav">Request a call</button>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./javaScript/script.js"></script>
 </body>

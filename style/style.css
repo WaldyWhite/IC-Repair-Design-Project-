@@ -1,5 +1,5 @@
 
-
+/*------------------------------- general ------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@
     border: none;
 }
 
+/*---- Buttons ---*/
 .button {
     width:162px;
     height:37px ;
@@ -27,22 +28,95 @@
     font-size: 11px;
     text-align: center;
 }
+
+.dt-submit {
+    padding-top: 4px;
+    width: 200px;
+    height: 51px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.dt-submit:hover {
+    background-color: rgba(228, 228, 228, 0.3);
+    border: 1px solid rgba(54, 54, 54, 0.5);
+    border-radius: 2px;
+    color: rgba(7, 7, 7);
+}
  
-.button:hover {
+.button:hover, .video-play:hover {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
 }
 
-/*----------------------------------------------------------*/
+/*------- Titles ----*/
+.special, h1, h2 , h3 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #E3B873;
+}
 
+/*------------- Checkbox ------*/
+.checkbox {
+    display: none;
+}
+
+.checkbox-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    margin-left: 238px;
+    padding-top: 34px;
+}
+
+.checkbox-box .label {
+    display: flex;
+    flex-direction: row;
+}
+
+.new-checkbox {
+    display: inline-block;
+    border:1px solid rgba(54, 54, 54, 0.3);
+    width: 18px;
+    height: 18px;
+    position: relative;
+    border-radius: 1px;
+    background-color: #E3B873;
+}
+
+.new-checkbox::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+}
+
+.checkbox1:checked + .new-checkbox::before, 
+.checkbox2:checked + .new-checkbox::before,
+.checkbox3:checked + .new-checkbox::before {
+    background-image: url("../images/forCheckbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    opacity: 1;
+}
+
+/*-------------------------------/ general------------------------------------*/
+
+/*------------------------------- HEADER -------------------------------------*/
 .fix-container {
     max-width: 1440px;
     margin:0 auto;
 }
 
 .header {
-    max-height:83px ;
     font-size: 11px;
     color: #E3B873;
     text-transform: uppercase;
@@ -106,6 +180,11 @@
     line-height: 15px;
 }
 
+/*----------------------------- / HEADER --------------------------------------*/
+
+/*------------------------------- MAIN ----------------------------------------*/
+
+/* ----------------- First Container -------------------*/
 .first-container {
     background-image: url("../images/image4.3.jpg");
     background-repeat: no-repeat;
@@ -124,16 +203,10 @@
     margin-bottom: 41px;
 }
 .title {
-    font-family: 'Yeseva One';
+    color: #fff;
     font-size: 40px;
     line-height: 53px;
-    text-transform: uppercase;
     margin-bottom: 17px;
-}
-
-.special, h2 , h3 {
-    font-family: 'Yeseva One';
-    color: #E3B873;
 }
 
 .discription {
@@ -153,7 +226,8 @@
     height: 51px;
     padding: 0;
 }
-/*------------------------------Secon Container ------------------------------------*/
+
+/*---------------------------- Secon Container -------------------------------*/
 .second-container {
     background-color: #131313;
     text-transform: uppercase;
@@ -203,11 +277,9 @@
 .second-container_title {
     margin-top: -3px;
     padding-bottom: 26px;
-    font-family: 'Yeseva One';
     font-size: 27px;
     line-height: 37px;
     letter-spacing: -0.07em;
-    text-transform: uppercase;
 }
 
 .description-text  {
@@ -250,9 +322,6 @@
 
 .swiper-slide h3 {
     margin-bottom: 6px;
-    font-family: 'Yeseva One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
 }
@@ -315,7 +384,7 @@
     justify-content: space-between;
 }
 /*---------- / Swiper ----------*/
-/*-----------------------------Third Container--------------------------------------*/
+/*-----------------------------Third Container--------------------------------*/
 
 .third-container {
     margin-top: -222px;
@@ -336,6 +405,7 @@
     background-repeat: no-repeat;
     margin-bottom: 38px;
 }
+
 .opacity-video {
     display: flex;
     flex-direction: row;
@@ -346,6 +416,24 @@
     background-color: rgba(0, 0, 0, 0.8);;
 }
 
+.video-play {
+    margin-top: -9px;
+    margin-left: -3px;
+    text-align: center;
+    width: 86px;
+    height: 86px;
+    border-radius: 50px;
+    background-color: #E3B873;
+}
+
+.video-play img{
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.video-play:hover {
+border-radius: 50PX;
+}
 .video-Control-descript {
     margin: 0 auto;
     font-size: 18px;
@@ -400,43 +488,6 @@ form {
     color: #363636;
 }
 
-.dt-submit {
-    padding-top: 4px;
-    width: 200px;
-    height: 51px;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 27px;
-    text-align: center;
-}
-
-.dt-submit:hover {
-    background-color: rgba(228, 228, 228, 0.3);
-    border: 1px solid rgba(54, 54, 54, 0.5);
-    border-radius: 2px;
-    color: rgba(7, 7, 7);
-}
-
-
-
-.checkbox-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    margin-left: 238px;
-    padding-top: 34px;
-}
-
-.checkbox-box .label {
-    display: flex;
-    flex-direction: row;
-}
-
-#checkbox-id, #checkbox2-id {
-    display: none;
-
-}
-
 .checkbox-text {
     color: #181818;
     font-size: 14px;
@@ -444,38 +495,12 @@ form {
     margin-left: 8px;
 }
 
-.new-checkbox {
-    display: inline-block;
-    border:1px solid rgba(54, 54, 54, 0.3);
-    width: 18px;
-    height: 18px;
-    position: relative;
-    border-radius: 1px;
-    background-color: #E3B873;
-}
-
-.new-checkbox::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 16px;
-    height: 16px;
-    opacity: 0;
-}
-
-#checkbox-id:checked + .new-checkbox::before {
-    background-image: url("../images/forCheckbox.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px 12px;
-    opacity: 1;
-}
 /*---------- / Form --------------*/
 
 .types-of-repair {
     padding-top: 143px;
     padding-right: 2px;
-    margin-bottom: 311px;
+    margin-bottom: 314px;
 }
 
 .box-logo {
@@ -589,13 +614,13 @@ form {
 .free-services {
     width: 1006px;
     height: 645px;
-    background-image: url("../images/image\ 6.1.png");
+    background-image: url("../images/image6.1.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .form-conteiner {
-    padding-top: 106px;
+    padding-top: 104px;
     padding-right: 98px;
 
 }
@@ -644,22 +669,16 @@ form {
 }
 
 .checkbox-box2 {
-    margin-top: -31px;
+    justify-content: start;
+    margin-top: -65px;
     margin-left: 0px;
-    margin-bottom: 32px;
-}
-#checkbox2-id:checked + .new-checkbox::before {
-    background-image: url("../images/forCheckbox.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px 12px;
-    opacity: 1;
+    margin-bottom: 34px;
 }
 
 .checkbox2-text {
     font-size: 14px;
     line-height: 23px;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .dt-form2 {
@@ -682,7 +701,7 @@ form {
 /*----------------------- Fifth Container -----------*/
 .fifth-container {
     margin: 0 auto;
-    background-image: url("../images/image\ 5.1.png");
+    background-image: url("../images/image5.1.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -767,8 +786,7 @@ form {
 .our-clients {
     margin: 0 auto;
     text-align: center;
-    padding-top: 28px;
-
+    padding-top: 29px;
 }
 
 .our-clients-title {
@@ -778,18 +796,18 @@ form {
     text-align: center;
     color: #181818;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 19px;
 }
 
 .our-clients-text {
-    padding-top: 15px;
+    padding-top: 8px;
     font-size: 18px;
     line-height: 29px;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
 }
 
 .cliens-cards {
-    padding: 0px 103px 0 103px;
+    padding: 0px 100px 0 103px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -808,7 +826,7 @@ form {
 .client-photo {
     display: flex;
     flex-direction: row;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .client-photo img {
@@ -818,7 +836,7 @@ form {
 }
 
 .cliet-name {
-    padding-top:15px;
+    padding-top:16px;
     font-family: 'Yeseva One';
     font-size: 18px;
     line-height: 23px;
@@ -827,7 +845,7 @@ form {
 
 .card-text {
     margin-left: -2px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     width: 327px;
     font-size: 13px;
     line-height: 180%;
@@ -862,10 +880,141 @@ form {
 }
 
 .card-label p {
-    padding-left: 14px;
-    padding-top: 14px;
+    padding-left: 13px;
+    padding-top: 16px;
     font-family: 'Yeseva One';
     font-size: 17px;
     line-height: 24px;
     color: #FFFFFF;
+}
+.backgraund-images img {
+    width: 724px;
+    height: 739px;
+}
+.backgraund-images {
+    display: flex;
+    flex-direction: row;
+    margin-top: -378px;
+
+}
+/*-------------------------- Quetions ------------------------------*/
+
+.questions-form-container {
+    width: 885px;
+    height: 445px;
+    margin-left: 287px;
+    margin-top: -228px;
+    padding-top: 33px;
+    background: rgb(19, 19, 19);
+    backdrop-filter: blur(20px);
+}
+
+.qs-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 43px;
+}
+
+.questions-form-box {
+    width: 523px;
+    margin: 0 auto;
+}
+
+.qs-form {
+    display: grid;
+}
+
+.form-inputs {
+    margin: 0;
+    padding: 0;
+    width: 231px;
+
+}
+
+.qs-input {
+    width: 231px;
+    line-height: 25px;
+    background: rgb(19, 19, 19, 0.2);
+
+}
+
+.qs-name-in {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.qs-phone-in {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.qs-text-in {
+    grid-row: 2;
+}
+
+.qs-text {
+    width: 517px;
+}
+
+.checkbox-box3 {
+    margin-top: -34px;
+    margin-left: 116px;
+}
+.qs-checkbox {
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1/3;
+    margin-bottom: 46px;
+    margin-left: 3px;
+}
+
+.bt-qustion {
+    grid-row: 4;
+    grid-column: 1/3;
+    margin-left: 162px;
+}
+
+
+.bt-qustion:hover {
+    color: #FFFFFF;
+}
+
+/*------------------ Sixth Container -------------------*/
+.sixth-container {
+    margin-top: -223px;
+    background-image: url("../images/building.png");
+}
+
+.sixth-container-opasity {
+    padding-top: 274px;
+    padding-bottom: 61px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+.sixth-container-opasity h2 {
+font-size: 20px;
+line-height: 28px;
+margin-bottom: 22px;
+}
+
+.email-insta {
+    margin-left: -15px;
+    margin-bottom: 38px;
+}
+.email-insta img {
+    margin-left: 11px;
+}
+
+.map {
+    margin-left: -6px;
+}
+
+/*------------------------------- / Main ------------------------*/
+/*--------------- Footer ---------------------*/
+.footer {
+    padding:48px 90px 48px 90px;
 }

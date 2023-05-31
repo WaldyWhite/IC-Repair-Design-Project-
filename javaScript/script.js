@@ -16,3 +16,13 @@ new Swiper('.swiper', {
     },
 
   });
+
+/*------ Webcam ------*/
+const videoCont = document.querySelector(".video")
+const videoBlock = document.querySelector(".opacity-video");
+const videoPlay = document.querySelector(".video-play");
+
+videoPlay.addEventListener("click", function() {
+    videoBlock.innerHTML = "<iframe width=\"818\" height=\"434\" src=\"https://www.youtube.com/embed/S-3CjLI9qD0?controls=0&amp;autoplay=1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+
+})
