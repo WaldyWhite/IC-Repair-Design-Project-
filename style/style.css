@@ -117,6 +117,7 @@
 }
 
 .header {
+    height: 83px;
     font-size: 11px;
     color: #E3B873;
     text-transform: uppercase;
