@@ -174,11 +174,9 @@
     color: #E3B873;
 
 }
-.tel a {
+.tel a:hover {
     text-decoration: underline;
-    color: #E3B873;
-    font-size: 11px;
-    line-height: 15px;
+
 }
 
 /*----------------------------- / HEADER --------------------------------------*/
@@ -1018,4 +1016,5 @@ margin-bottom: 22px;
 /*--------------- Footer ---------------------*/
 .footer {
     padding:48px 90px 48px 90px;
+    height: 133px;
 }
