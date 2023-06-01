@@ -458,8 +458,9 @@
 }
 
 .video-play:hover {
-border-radius: 50PX;
+    border-radius: 50PX;
 }
+
 .video-Control-descript {
     margin: 0 auto;
     font-size: 18px;
@@ -505,7 +506,6 @@ form {
     line-height: 23px;
     height: 26px;
     outline: none;
-
     width: 236px;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
@@ -768,6 +768,7 @@ form {
 .class-items a:hover {
     padding-bottom: 2px;
 }
+
 .room-images {
     max-width: 722px;
     height: 1059px;
@@ -1051,19 +1052,15 @@ margin-bottom: 22px;
 
 /*----------------- Animationen ---------------*/
 
-@keyframes animation1 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-
-  @keyframes animation2 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-
-  @keyframes animation3 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+@keyframes animation {
+    0% {
+        color: rgba(255, 255, 255, 0.3);
+        border-bottom: 0px solid rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        color: #E3B873;
+        border-bottom: 1px solid #E3B873;
+    }
   }
 
   /*--------------- Media -----------------*/

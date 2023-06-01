@@ -3,6 +3,8 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    speed: 2000,
+    spaceBetween: 100,
   
     // If we need pagination
     pagination: {
@@ -33,7 +35,6 @@ const swiper = new Swiper('.swiper', {
       slidenumber = 1;
     }
     styleSet ()
-    console.log(slidenumber);
   });
 
   swiper.on('slidePrevTransitionStart', function () {
@@ -42,7 +43,6 @@ const swiper = new Swiper('.swiper', {
       slidenumber = 3;
     }
     styleSet ()
-    console.log(slidenumber);
   });
 
 /*---- links Style  ----*/
@@ -53,54 +53,65 @@ const linkPatriotic = document.querySelector(".patriotic");
 
 function styleSet () {
   if (slidenumber == 1) {
+    /*---- Set ------*/
     linkAdmiral.style.color = "#E3B873";
     linkAdmiral.style.paddingBottom = "6px";
     linkAdmiral.style.borderBottom = "1px solid #E3B873";
+    linkAdmiral.style.animation = "animation 2s";
 
-    /*--------------*/
+    /*------ Reset ------*/
     linkThieves.style.color = "rgba(255, 255, 255, 0.3)";
     linkThieves.style.paddingBottom = "";
     linkThieves.style.borderBottom = "none";
-
-    /*------------*/
+    linkThieves.style.animation = "none";
+    
+    /*------ Reset ------*/
     linkPatriotic.style.color = "rgba(255, 255, 255, 0.3)";
     linkPatriotic.style.paddingBottom = "";
     linkPatriotic.style.borderBottom = "none";
-    console.log("roomAdmiral")
-}
+    linkPatriotic.style.animation = "none";
+  }
 
 if (slidenumber == 2) {
+    /*---- Set ------*/
     linkThieves.style.color = "#E3B873";
     linkThieves.style.paddingBottom = "6px"
     linkThieves.style.borderBottom = "1px solid #E3B873"
+    linkThieves.style.animation = "animation 2s";
 
-    /*--------------*/
+    /*------ Reset ------*/
     linkAdmiral.style.color = "rgba(255, 255, 255, 0.3)";
     linkAdmiral.style.paddingBottom = "0";
     linkAdmiral.style.borderBottom = "none";
+    linkAdmiral.style.animation = "none";
     
-    /*------------*/
+    /*------ Reset ------*/
     linkPatriotic.style.color = "rgba(255, 255, 255, 0.3)";
     linkPatriotic.style.paddingBottom = "0";
     linkPatriotic.style.borderBottom = "none";
-
-}
+    linkPatriotic.style.animation = "nonw";
+  }
 
 if (slidenumber == 3){
-    console.log("Patriot");
+    /*---- Set ------*/
     linkPatriotic.style.color = "#E3B873";
     linkPatriotic.style.paddingBottom = "6px";
     linkPatriotic.style.borderBottom = "1px solid #E3B873";
+    linkPatriotic.style.animation = "animation 2s";
 
-    /*--------------*/
+    /*----- Reset---------*/
     linkAdmiral.style.color = "rgba(255, 255, 255, 0.3)";
     linkAdmiral.style.paddingBottom = "0";
     linkAdmiral.style.borderBottom = "none";
+    linkAdmiral.style.animation = "none";
+
       
-    /*------------*/
+    /*------ Reset ------*/
     linkThieves.style.color = "rgba(255, 255, 255, 0.3)";
     linkThieves.style.paddingBottom = "0";
     linkThieves.style.borderBottom = "none";
+    linkThieves.style.animation = "none";
+
   }
 }
 
