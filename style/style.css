@@ -244,20 +244,36 @@
 
 .room-list_item {
     margin-right: 61px;
+    
 }
 
-.room-list a {
+.admiral {
+    font-family: "Yeseva One";
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 6px;
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    cursor: pointer;
+}
+
+.room-link {
     font-family: "Yeseva One";
     text-transform: uppercase;
     font-size: 14px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
-.room-list a:hover, .class-items a:hover {
-    padding-bottom: 6px;
-    color: #E3B873;
-    border-bottom: 1px solid #E3B873;
+
+
+.room-link:hover, .class-items a:hover, .admiral:hover{
+    padding-bottom: 6px!important;
+    color: #E3B873!important;
+    border-bottom: 1px solid #E3B873!important;
+    transition: all 0.5s;
 }
 
 .description-container {
@@ -1020,3 +1036,20 @@ margin-bottom: 22px;
     padding:48px 90px 48px 90px;
     height: 133px;
 }
+
+/*----------------- Animationen ---------------*/
+
+@keyframes animation1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  @keyframes animation2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  @keyframes animation3 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
