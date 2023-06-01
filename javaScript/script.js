@@ -1,4 +1,4 @@
-new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     // Optional parameters
     direction: 'horizontal',
@@ -14,8 +14,95 @@ new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    on: {
+      init: function () {
+        console.log('swiper initialized');
+      },
+    },
 
   });
+
+  /*-------------- Set LinkStyle ------------------*/
+
+  let slidenumber = 1;
+
+  /*-- Swiper Events --*/
+  swiper.on('slideNextTransitionStart', function () {
+    slidenumber++;
+    if (slidenumber > 3){
+      slidenumber = 1;
+    }
+    styleSet ()
+    console.log(slidenumber);
+  });
+
+  swiper.on('slidePrevTransitionStart', function () {
+    slidenumber--;
+    if(slidenumber < 1) {
+      slidenumber = 3;
+    }
+    styleSet ()
+    console.log(slidenumber);
+  });
+
+/*---- links Style  ----*/
+
+const linkAdmiral = document.querySelector('.admiral');
+const linkThieves = document.querySelector(".thieves");
+const linkPatriotic = document.querySelector(".patriotic");
+
+function styleSet () {
+  if (slidenumber == 1) {
+    linkAdmiral.style.color = "#E3B873";
+    linkAdmiral.style.paddingBottom = "6px";
+    linkAdmiral.style.borderBottom = "1px solid #E3B873";
+
+    /*--------------*/
+    linkThieves.style.color = "rgba(255, 255, 255, 0.3)";
+    linkThieves.style.paddingBottom = "";
+    linkThieves.style.borderBottom = "none";
+
+    /*------------*/
+    linkPatriotic.style.color = "rgba(255, 255, 255, 0.3)";
+    linkPatriotic.style.paddingBottom = "";
+    linkPatriotic.style.borderBottom = "none";
+    console.log("roomAdmiral")
+}
+
+if (slidenumber == 2) {
+    linkThieves.style.color = "#E3B873";
+    linkThieves.style.paddingBottom = "6px"
+    linkThieves.style.borderBottom = "1px solid #E3B873"
+
+    /*--------------*/
+    linkAdmiral.style.color = "rgba(255, 255, 255, 0.3)";
+    linkAdmiral.style.paddingBottom = "0";
+    linkAdmiral.style.borderBottom = "none";
+    
+    /*------------*/
+    linkPatriotic.style.color = "rgba(255, 255, 255, 0.3)";
+    linkPatriotic.style.paddingBottom = "0";
+    linkPatriotic.style.borderBottom = "none";
+
+}
+
+if (slidenumber == 3){
+    console.log("Patriot");
+    linkPatriotic.style.color = "#E3B873";
+    linkPatriotic.style.paddingBottom = "6px";
+    linkPatriotic.style.borderBottom = "1px solid #E3B873";
+
+    /*--------------*/
+    linkAdmiral.style.color = "rgba(255, 255, 255, 0.3)";
+    linkAdmiral.style.paddingBottom = "0";
+    linkAdmiral.style.borderBottom = "none";
+      
+    /*------------*/
+    linkThieves.style.color = "rgba(255, 255, 255, 0.3)";
+    linkThieves.style.paddingBottom = "0";
+    linkThieves.style.borderBottom = "none";
+  }
+}
 
 /*------ Webcam ------*/
 const videoBlock = document.querySelector(".opacity-video");
@@ -26,77 +113,4 @@ videoPlay.addEventListener("click", function() {
 
 })
 
-/*---- Images Chenge ----*/
-
-const roomContainer = document.querySelector(".images");
-
-
-const roomAdmiral = document.querySelector(".admiral");
-  roomAdmiral.addEventListener("click", function () {
-    roomContainer.src = "./images/image2.1.jpg";
-    roomContainer.width = 679;
-    roomContainer.height = 482;
-    roomAdmiral.style.color = "#E3B873";
-    roomAdmiral.style.paddingBottom = "6px";
-    roomAdmiral.style.borderBottom = "1px solid #E3B873";
-
-    /*--------------*/
-    roomThieves.style.color = "rgba(255, 255, 255, 0.3)";
-    roomThieves.style.paddingBottom = "";
-    roomThieves.style.borderBottom = "none";
-
-    /*------------*/
-    roomPatriotic.style.color = "rgba(255, 255, 255, 0.3)";
-    roomPatriotic.style.paddingBottom = "";
-    roomPatriotic.style.borderBottom = "none";
-    console.log(roomAdmiral)
-    /*---- Animation ----*/
-    document.querySelector(".images").style.animation = "animation1 2s";
-})
-
-const roomThieves = document.querySelector(".thieves");
-  roomThieves.addEventListener("click", function () {
-    roomContainer.src = "./images/image52.png";
-    roomContainer.width = 679;
-    roomContainer.height = 482;
-    roomThieves.style.color = "#E3B873";
-    roomThieves.style.paddingBottom = "6px"
-    roomThieves.style.borderBottom = "1px solid #E3B873"
-
-    /*--------------*/
-    roomAdmiral.style.color = "rgba(255, 255, 255, 0.3)";
-    roomAdmiral.style.paddingBottom = "0";
-    roomAdmiral.style.borderBottom = "none";
-    
-    /*------------*/
-    roomPatriotic.style.color = "rgba(255, 255, 255, 0.3)";
-    roomPatriotic.style.paddingBottom = "0";
-    roomPatriotic.style.borderBottom = "none";
-    /*---- Animation ----*/
-    document.querySelector(".images").style.animation = "animation2 2s";
-})
-
-const roomPatriotic = document.querySelector(".patriotic");
-    roomPatriotic.addEventListener("click", function () {
-    roomContainer.src = "./images/image2.jpg";
-    roomContainer.width = 679;
-    roomContainer.height = 482;
-    roomPatriotic.style.color = "#E3B873";
-    roomPatriotic.style.paddingBottom = "6px";
-    roomPatriotic.style.borderBottom = "1px solid #E3B873";
-
-    /*--------------*/
-    roomAdmiral.style.color = "rgba(255, 255, 255, 0.3)";
-    roomAdmiral.style.paddingBottom = "0";
-    roomAdmiral.style.borderBottom = "none";
-      
-    /*------------*/
-    roomThieves.style.color = "rgba(255, 255, 255, 0.3)";
-    roomThieves.style.paddingBottom = "0";
-    roomThieves.style.borderBottom = "none";
-    /*---- Animation ----*/
-    document.querySelector(".images").style.animation = "animation3 2s";
-})
-
-
-console.dir(document.querySelector(".admiral"))
+ 

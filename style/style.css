@@ -113,7 +113,7 @@
 
 /*------------------------------- HEADER -------------------------------------*/
 .fix-container {
-    max-width: 1440px;
+    width: 1440px;
     margin:0 auto;
 }
 
@@ -212,7 +212,6 @@
 .discription {
     font-size: 22px;
     line-height: 36px;
-    max-width: 707px;
 }
 
 .buttons {
@@ -255,7 +254,6 @@
     padding-bottom: 6px;
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
-    cursor: pointer;
 }
 
 .room-link {
@@ -264,12 +262,9 @@
     font-size: 14px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
 }
 
-
-
-.room-link:hover, .class-items a:hover, .admiral:hover{
+.class-items a:hover{
     padding-bottom: 6px!important;
     color: #E3B873!important;
     border-bottom: 1px solid #E3B873!important;
@@ -287,7 +282,6 @@
 
 .description {
     max-width: 441px;
-    margin-bottom: 48px;
 }
 
 .second-container_title {
@@ -298,44 +292,58 @@
     letter-spacing: -0.07em;
 }
 
+/*------------ Swiper ----------*/
 .description-text  {
     text-transform: none;
-    font-size: 14px;
-    line-height: 27px;
-}
-/*------------ Swiper ----------*/
-.swiper{
-    width: 420px;
-    height: 269px;
-    margin-left: 0;
+    font-size: 14px!important;
+    line-height: 27px!important;
 }
 
 .swiper-slide {
-    height: 186px;
     display: grid;
-    grid-gap: 8px;
+    margin-bottom: 17px;
 }
 
+.description {
+    width: 506px;
+    grid-column: 1/2;
+    grid-row: 1;
+}
 .city {
+    width: 300px;
+    padding-top: 227px;
     grid-column: 1;
     grid-row: 1;
 }
 
 .area {
-    
+    width: 300px;
+    padding-top: 226px;
+    margin-left: -251px;
     grid-column: 2;
     grid-row: 1;
 }
 
 .time {
+    width: 300px;
+    margin-top: -159px;
     grid-column: 1;
     grid-row: 2;
 }
 .cost {
+    width: 300px;
+    margin-left: -251px;
+    margin-top: -159px;
     grid-column: 2;
     grid-row: 2;
 }
 
+.room-image {
+    margin-left:0px;
+    grid-row: 1/2;
+    grid-column: 3;
+
+}
 .swiper-slide h3 {
     margin-bottom: 6px;
     font-size: 18px;
@@ -373,6 +381,7 @@
 
 
 .swiper-button-next, .swiper-button-prev {
+    margin-top: 10px;
     width: 102px!important;
     height: 15px!important;
     background-repeat: no-repeat;
@@ -380,7 +389,7 @@
 }
 
 .swiper-pagination {
-    margin-left: -103px!important;
+    margin-left: -477px!important;
 }
 
 .swiper-button-next {
@@ -394,7 +403,7 @@
 
 
 .vectors {
-    margin-top: -3px;
+    margin-top: -35px;
     width: 266px;
     display: flex;
     justify-content: space-between;
@@ -403,7 +412,7 @@
 /*-----------------------------Third Container--------------------------------*/
 
 .third-container {
-    margin-top: -222px;
+    margin-top: -223px;
     margin-left: 2px;
 }
 
@@ -711,8 +720,8 @@ form {
 /*-------------------------------------------*/
 
 .help-logo {
-    margin-left: 847px;
-    padding-bottom: 204px;
+    margin-left: 846px;
+    padding-bottom: 203px;
 }
 
 /*----------------------- Fifth Container -----------*/
@@ -726,8 +735,8 @@ form {
 .fifth-container-opasity {
     display: flex;
     flex-direction: row;
-    padding-top: 136px;
-    padding-bottom: 50px;
+    padding-top: 134px;
+    padding-bottom: 42px;
     background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
 
@@ -747,7 +756,7 @@ form {
 }
 
 .class-items {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .class-items a {
@@ -765,7 +774,7 @@ form {
     margin-left: 544px;
     display: flex;
     flex-direction: row;
-    margin-top: -978px;
+    margin-top: -979px;
 
 }
 
@@ -813,9 +822,12 @@ form {
     text-align: center;
     color: #181818;
     text-transform: uppercase;
-    margin-bottom: 19px;
+    margin-bottom: 12px;
 }
 
+.our-clients-logo {
+    margin-bottom: 8px;
+}
 .our-clients-text {
     padding-top: 8px;
     font-size: 18px;
@@ -1052,4 +1064,9 @@ margin-bottom: 22px;
   @keyframes animation3 {
     0% {opacity: 0;}
     100% {opacity: 1;}
+  }
+
+  /*--------------- Media -----------------*/
+  @media screen {
+
   }
