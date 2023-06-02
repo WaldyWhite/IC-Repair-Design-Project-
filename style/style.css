@@ -271,19 +271,6 @@
     transition: all 0.5s;
 }
 
-.description-container {
-    color: #fff;
-    padding: 0 135px 0 135px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 76px;
-}
-
-.description {
-    max-width: 441px;
-}
-
 .second-container_title {
     margin-top: -3px;
     padding-bottom: 26px;
@@ -293,57 +280,74 @@
 }
 
 /*------------ Swiper ----------*/
+.swipers-containers {
+    color: #fff;
+    padding: 0  135px 0 135px;
+    display: grid;
+    min-width: 0;
+}
+
+.description {
+    grid-row: 1;
+    grid-column: 1;
+    width: 506px;
+}
+
 .description-text  {
     text-transform: none;
     font-size: 14px!important;
     line-height: 27px!important;
 }
 
-.swiper-slide {
-    display: grid;
-    margin-bottom: 17px;
+.first-swiper_right {
+    min-width: 0;
+    grid-row: 1/2;
+    grid-column: 2;
+    margin-left:-14px;
 }
 
-.description {
-    width: 506px;
-    grid-column: 1/2;
-    grid-row: 1;
+.text-swiper {
+    width: 429px;
+    height: 270px;
+    margin-top: -258px;
+    margin-left: -1px;
+    margin-bottom: 77px;
+
 }
+
+.swiper-slide{
+    width: 700px;
+    display: grid;
+}
+
 .city {
-    width: 300px;
-    padding-top: 227px;
-    grid-column: 1;
     grid-row: 1;
+    grid-column: 1;
+
 }
 
 .area {
-    width: 300px;
-    padding-top: 226px;
-    margin-left: -251px;
     grid-column: 2;
     grid-row: 1;
 }
 
 .time {
-    width: 300px;
-    margin-top: -159px;
+    margin-top: -64px;
     grid-column: 1;
     grid-row: 2;
 }
 .cost {
-    width: 300px;
-    margin-left: -251px;
-    margin-top: -159px;
+    margin-top: -64px;
     grid-column: 2;
     grid-row: 2;
+} 
+
+.swiper-slide img {
+    width: 679px;
+    height: 482px;
+
 }
 
-.room-image {
-    margin-left:0px;
-    grid-row: 1/2;
-    grid-column: 3;
-
-}
 .swiper-slide h3 {
     margin-bottom: 6px;
     font-size: 18px;
@@ -382,14 +386,14 @@
 
 .swiper-button-next, .swiper-button-prev {
     margin-top: 10px;
-    width: 102px!important;
+    width: 42px!important;
     height: 15px!important;
     background-repeat: no-repeat;
     position: static!important;
 }
 
 .swiper-pagination {
-    margin-left: -477px!important;
+    margin-left: -107px!important;
 }
 
 .swiper-button-next {
@@ -404,7 +408,7 @@
 
 .vectors {
     margin-top: -35px;
-    width: 266px;
+    width: 207px;
     display: flex;
     justify-content: space-between;
 }
@@ -961,7 +965,6 @@ form {
     margin: 0;
     padding: 0;
     width: 231px;
-
 }
 
 .qs-input {
@@ -993,6 +996,7 @@ form {
     margin-top: -34px;
     margin-left: 116px;
 }
+
 .qs-checkbox {
     text-align: center;
     grid-row: 3;

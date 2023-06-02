@@ -1,35 +1,46 @@
-const swiper = new Swiper('.swiper', {
+let myImgSlider = new Swiper('.images-swiper', {
+    slidesPerView: 1,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 20,
+  });
+
+  let myTextSlider = new Swiper('.text-swiper', {
     slidesPerView: 1,
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     speed: 2000,
-    spaceBetween: 100,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    on: {
-      init: function () {
-        console.log('swiper initialized');
-      },
-    },
-
+    spaceBetween: 330,
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          init: function () {
+          },
+        },
+    
   });
+
+  myImgSlider.controller.control = myTextSlider;
+  myTextSlider.controller.control = myImgSlider;
+
+
 
   /*-------------- Set LinkStyle ------------------*/
 
   let slidenumber = 1;
 
   /*-- Swiper Events --*/
-  swiper.on('slideNextTransitionStart', function () {
+  myTextSlider.on('slideNextTransitionStart', function () {
     slidenumber++;
     if (slidenumber > 3){
       slidenumber = 1;
@@ -37,7 +48,7 @@ const swiper = new Swiper('.swiper', {
     styleSet ()
   });
 
-  swiper.on('slidePrevTransitionStart', function () {
+  myTextSlider.on('slidePrevTransitionStart', function () {
     slidenumber--;
     if(slidenumber < 1) {
       slidenumber = 3;
