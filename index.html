@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mediaStyle.css">
+    <link rel="stylesheet" href="./style/styleSwiperPopup.css">
     <title>Repair</title>
 </head>
 <body>
@@ -16,12 +18,12 @@
             <div class="logo">IC " Repair Design Projeckt "</div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">HOME</a></li>
-                    <li class="nav-item"><a href="#projects">PROJECTS</a></li>
-                    <li class="nav-item"><a href="#measurement">MEASUREMENT</a></li>
-                    <li class="nav-item"><a href="#team">TEAM</a></li>
-                    <li class="nav-item"><a href="#reviews">REVIEWS</a></li>
-                    <li class="nav-item"><a href="#contacts">CONTACTS</a></li>
+                    <li class="nav-item nav-link"><a href="index.html">HOME</a></li>
+                    <li class="nav-item nav-link"><a href="#projects">PROJECTS</a></li>
+                    <li class="nav-item nav-link"><a href="#measurement">MEASUREMENT</a></li>
+                    <li class="nav-item nav-link"><a href="#team">TEAM</a></li>
+                    <li class="nav-item nav-link"><a href="#reviews">REVIEWS</a></li>
+                    <li class="nav-item nav-link"><a href="#contacts">CONTACTS</a></li>
                     <li class="nav-item tel"><a href="tel:+79287683239">+7 (928) 768-32-39</a></li>
                 </ul>
             </nav>
@@ -53,13 +55,13 @@
             <div class="second-container">
                 <ul class="room-list">
                     <li class="room-list_item">
-                        <a class="admiral  link">Rostov-on-Don, Admiral</a>
+                        <a href="#popup1" class="admiral  link">Rostov-on-Don, Admiral</a>
                     </li>
                     <li class="room-list_item">
-                        <a class="thieves room-link link">Sochi Thieves</a>
+                        <a href="#popup2" class="thieves room-link link">Sochi Thieves</a>
                     </li>
                     <li class="room-list_item">
-                        <a class="patriotic room-link link">Rostov-on-Don Patriotic</a>
+                        <a href="#popup3" class="patriotic room-link link">Rostov-on-Don Patriotic</a>
                     </li>
                 </ul>
                 <div class="swipers-containers">
@@ -98,7 +100,7 @@
                                         <div class="city">
                                             <h3>City:</h3>
                                             <p>Rostov-on-Don<br>
-                                            LCD Patriotic</p>
+                                            LCD Admiral</p>
                                         </div>
                                         <div class="area">
                                             <h3>apartment area:</h3>
@@ -117,8 +119,8 @@
                                 <div class="swiper-slide">
                                         <div class="city">
                                             <h3>City:</h3>
-                                            <p>Rostov-on-Don<br>
-                                            LCD Patriotic</p>
+                                            <p>Sochi<br>
+                                            LCD Theves</p>
                                         </div>
                                         <div class="area">
                                             <h3>apartment area:</h3>
@@ -155,12 +157,79 @@
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="vectors">
-                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-prev newprev"></div>
                                 <div class="swiper-button-next"></div>
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>  
+                <!-- -->  
+                <div class="mobile-container" id="popup1">
+                    <a href="#projects" class="popup_area"></a>
+                    <div class="close-cirquit">
+                    <a href="#projects" class="close-icon">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                    <div class="header-mobile">
+                        <div class="swiperPopup1 swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide"><img src="./images/image2.1.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="./images/image2.1.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="./images/image2.1.jpg" alt=""></div>
+                            </div>
+                            <div class="swiper-button-prev" style="margin-left: 20px;"></div>
+                            <div class="swiper-button-next" style="margin-left: 617px; margin-top: -15px;"></div>
+                    </div>
+                </div>  
+                </div>
+                <div class="mobile-container" id="popup2">
+                    <a href="#projects" class="popup_area"></a>
+                    <div class="close-cirquit">
+                    <a href="#projects" class="close-icon">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                    <div class="header-mobile">
+                        <div class="swiperPopup1 swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide"><img src="./images/image52.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="./images/image52.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="./images/image52.jpg" alt=""></div>
+                            </div>
+                            <div class="swiper-button-prev" style="margin-left: 20px;"></div>
+                            <div class="swiper-button-next" style="margin-left: 617px; margin-top: -15px;"></div>
+                    </div>
+                </div>  
+                </div>
+                <div class="mobile-container" id="popup3">
+                    <a href="#projects" class="popup_area"></a>
+                    <div class="close-cirquit">
+                    <a href="#projects" class="close-icon">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                    <div class="header-mobile">
+                        <div class="swiperPopup1 swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide"><img src="./images/image2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="./images/image2.jpg" alt=""></div>
+                              <div class="swiper-slide"><img src="./images/image2.jpg" alt=""></div>
+                            </div>
+                            <div class="swiper-button-prev" style="margin-left: 20px;"></div>
+                            <div class="swiper-button-next" style="margin-left: 617px; margin-top: -15px;"></div>
+                    </div>
+                </div>  
+                </div>
                 <div class="online-logo">
                     <img src="./images/online_logo.svg" alt="Online Logo">
                 </div>

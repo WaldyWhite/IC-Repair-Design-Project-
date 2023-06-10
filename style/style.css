@@ -109,14 +109,14 @@
     opacity: 1;
 }
 
-/*-------------------------------/ general------------------------------------*/
-
-/*------------------------------- HEADER -------------------------------------*/
 .fix-container {
     width: 1440px;
     margin:0 auto;
 }
 
+/*-------------------------------/ general------------------------------------*/
+
+/*------------------------------- HEADER -------------------------------------*/
 .header {
     height: 83px;
     font-size: 11px;
@@ -202,6 +202,7 @@
 .text-content {
     margin-bottom: 41px;
 }
+
 .title {
     color: #fff;
     font-size: 40px;
@@ -264,7 +265,7 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-.class-items a:hover{
+.class-items a:hover {
     padding-bottom: 6px!important;
     color: #E3B873!important;
     border-bottom: 1px solid #E3B873!important;
@@ -404,7 +405,6 @@
 .swiper-button-prev {
     background-image: url("../images/VectorPrev.svg");
 }
-
 
 .vectors {
     margin-top: -35px;
@@ -1068,6 +1068,8 @@ margin-bottom: 22px;
   }
 
   /*--------------- Media -----------------*/
-  @media screen {
-
-  }
+  @media (max-width:1299px) {
+    .bt-navt {
+    display: none;
+    }
+}
