@@ -10,7 +10,6 @@
     text-decoration: none;
     list-style: none;
     border: none;
-    z-index: 1;
 }
 
 /*---- Buttons ---*/
@@ -409,6 +408,11 @@
 .images-swiper .swiper-button-prev {
     display: none;
 }
+
+.images-swiper .swiper-button-next {
+    display: none;
+}
+
 .vectors {
     margin-top: -35px;
     width: 207px;
