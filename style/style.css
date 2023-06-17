@@ -10,6 +10,7 @@
     text-decoration: none;
     list-style: none;
     border: none;
+    z-index: 1;
 }
 
 /*---- Buttons ---*/
@@ -398,7 +399,6 @@
 }
 
 .swiper-button-next {
-
     background-image: url("../images/VectorNext.svg");
 }
 
@@ -406,6 +406,9 @@
     background-image: url("../images/VectorPrev.svg");
 }
 
+.images-swiper .swiper-button-prev {
+    display: none;
+}
 .vectors {
     margin-top: -35px;
     width: 207px;
@@ -585,7 +588,6 @@ form {
     width: 330px;
     background-color: #FFFFFF;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-
 }
 
 .list-title{

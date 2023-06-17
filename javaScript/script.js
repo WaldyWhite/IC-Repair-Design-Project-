@@ -6,7 +6,10 @@ let myImgSlider = new Swiper('.images-swiper', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 20,
-
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 let myTextSlider = new Swiper('.text-swiper', {
