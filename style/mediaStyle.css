@@ -1,21 +1,17 @@
 @media (max-width:769px) {
+
     .free-services, .swiper-pagination, .images-box1, .images-box2, .our-clients,
     .list-container, .vectors, .room-list, .bt-nav, .nav-link, .request-form, .help-logo, .footer , .backgraund-images{
         display: none;
     }
 
-    .fix-container, .questions-form-container {
-        width: 769px;
+    .fix-container, .questions-form-container, .second-container, .first-container, .third-container, .sixth-container-opasity {
+        width:769px;
         margin: 0 auto;
     }
 
     .header{
         padding:24px 45px 22px 45px;
-    }
-
-    .first-container {
-        margin: 0 auto;
-        background-color: aqua;
     }
 
     .box-opacity {
@@ -105,7 +101,7 @@
         margin-top: -258px;
         margin-left: 63px;
         margin-bottom: 77px;
-    
+
     }
 
     .online-logo {
@@ -212,13 +208,13 @@
     }
 
     .room-images {
-        width: 700px;
+        max-width: 700px;
         background-image: url(../images/image5.3.jpg);
         background-size: contain;
     }
 
     iframe{
-        width:600px!important;
+        max-width:600px!important;
     }
 
     .map {
@@ -231,8 +227,8 @@
     }
 
     .questions-form-container {
-        width: 769px;
-        height: 445px;
+        max-width: 769px;
+        max-height: 445px;
         padding-top: 33px;
         background: #181818;
         backdrop-filter: blur(20px);
@@ -244,7 +240,7 @@
         flex-direction: column;
     }
     .qs-input {
-        width: 710px;
+        max-width: 710px;
     }
 
     .qs-text-in {
@@ -252,7 +248,7 @@
     }
 
     .bt-qustion {
-        width: 604px;
+        max-width: 604px;
         margin-top: -80px;
     }
 
