@@ -240,7 +240,7 @@
         flex-direction: column;
     }
     .qs-input {
-        max-width: 710px;
+        width: 710px;
     }
 
     .qs-text-in {
