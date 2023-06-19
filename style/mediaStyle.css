@@ -1,11 +1,10 @@
 @media (max-width:769px) {
-    .bt-nav {
+    .free-services, .swiper-pagination, .images-box1, .images-box2, .our-clients,
+    .list-container, .vectors, .room-list, .bt-nav, .nav-link, .request-form, .help-logo, .footer , .backgraund-images{
         display: none;
     }
-    .nav-link {
-        display: none;
-    }
-    .fix-container {
+
+    .fix-container, .questions-form-container {
         width: 769px;
         margin: 0 auto;
     }
@@ -16,6 +15,7 @@
 
     .first-container {
         margin: 0 auto;
+        background-color: aqua;
     }
 
     .box-opacity {
@@ -31,11 +31,6 @@
     
     .bt-first-container {
         margin-bottom: 10px;
-
-    }
-
-    .room-list {
-        display: none;
     }
 
     .swipers-containers {
@@ -73,10 +68,6 @@
         width: 650px;
     }
 
-    .swiper-pagination {
-       display: none;
-    }
- 
     .images-swiper .swiper-button-next {
         background-image: url("../images/next.orange.svg");
         background-size: contain;
@@ -107,10 +98,6 @@
         opacity: 0.7;
 
     }
-    
-    .vectors{
-        display: none;
-    }
 
     .text-swiper {
         width:626px;
@@ -139,6 +126,7 @@
     }
 
     .third-container {
+        margin-left: -1px;
         background-color: #181818;;
         margin-bottom: -55;
     }
@@ -147,9 +135,14 @@
         color: #fff;
     }
 
-    .form{
+    form{
         width: 720px;
-        margin-left: 18px;
+        margin-left: -312px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        padding-bottom: 110px;
+
     }
     
     .label-form1, .label-form2 {
@@ -184,7 +177,13 @@
         width: 400px;
     }
 
+    .button {
+        padding: 0 ;
+    }
+
     .dt-submit {
+        margin: 0;
+        padding: 0;
         margin-left: 50px;
         width: 620px;
         height: 51px;
@@ -206,6 +205,73 @@
     .lists-box {
         margin-left:-1px ;
         margin-top: -37px;
+    }
+    .classes-title {
+        margin-top: -605px;
+        margin-left: 173px;
+    }
+
+    .room-images {
+        width: 700px;
+        background-image: url(../images/image5.3.jpg);
+        background-size: contain;
+    }
+
+    iframe{
+        width:600px!important;
+    }
+
+    .map {
+        margin-top: -683px;
+    }
+
+    .sixth-container-opasity {
+        background-color: #181818;
+        padding-bottom: 264px;
+    }
+
+    .questions-form-container {
+        width: 769px;
+        height: 445px;
+        padding-top: 33px;
+        background: #181818;
+        backdrop-filter: blur(20px);
+    }
+
+    .qs-form {
+        margin-left:-94px;
+        display: flex;
+        flex-direction: column;
+    }
+    .qs-input {
+        width: 710px;
+    }
+
+    .qs-text-in {
+        margin-bottom: 125px;
+    }
+
+    .bt-qustion {
+        width: 604px;
+        margin-top: -80px;
+    }
+
+    .email-insta {
+        margin-top:5px;
+    }
+
+    .checkbox-box3 {
+        margin-bottom: 20px;
+    }
+    .fifth-container {
+        background: none;
+    }
+
+    .fifth-container-opasity {
+        background: #fff;
+    }
+    .sixth-container-opasity h2 {
+        margin-top: 740px;
     }
 }
 
