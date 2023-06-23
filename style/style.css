@@ -818,6 +818,10 @@ form {
 .img-4 {
     height: 389px;
 }
+
+.swipper-box_mobile {
+    display: none;
+}
 /*-------------- Our Clients --------------------*/
 .our-clients {
     margin: 0 auto;

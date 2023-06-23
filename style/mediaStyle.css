@@ -6,7 +6,7 @@
     }
 
     .fix-container, .questions-form-container, .second-container, .first-container, .third-container, .sixth-container-opasity {
-        width:769px;
+        max-width:769px;
         margin: 0 auto;
     }
 
@@ -16,7 +16,7 @@
 
     .box-opacity {
         min-height: 707px;
-        padding: 194px 0 0 134px;
+        padding: 194px 0 0 127px;
     }
 
     .buttons {
@@ -28,7 +28,10 @@
     .bt-first-container {
         margin-bottom: 10px;
     }
-
+    .second-container {
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
     .swipers-containers {
         color: #fff;
         padding: 0  135px 0 75px;
@@ -40,28 +43,22 @@
     .first-swiper_right {
         order: 2;
         min-width: 0;
-        margin-left:-14px;
+        width: 650px;
+        margin-left:-15px;
     }
 
     .description {
         text-align: center;
         order: 1;
         width: 506px;
+        margin-bottom: 72px;
+        margin-left: 55px;
     }
 
     .second-swiper_left {
         margin-top: 330px;
         margin-left: -1px;
         order: 3;
-    }
-
-    .description {
-        margin-bottom: 72px;
-        margin-left: 60px;
-    }
-
-    .first-swiper_right {
-        width: 650px;
     }
 
     .images-swiper .swiper-button-next {
@@ -74,7 +71,7 @@
         background-size: contain;
     }
 
-    .vectors-img {
+    .vectors-img, .vectors-mobile  {
         padding-bottom: 50px;
         margin-top: -35px;
         width: 626px;
@@ -101,24 +98,23 @@
         margin-top: -258px;
         margin-left: 63px;
         margin-bottom: 77px;
-
     }
 
     .online-logo {
         padding-top: 2px;
-        margin-left: 273px;
+        margin-left: 287px;
     }
     
     .video {
         margin: 0 auto;
-        width: 727px;
+        width: 650px;
         height: 414px;
+        margin-left: 59px;
     }
 
     .opacity-video {
-        width: 727px;
+        max-width:651px;
         height: 414px;
-
     }
 
     .third-container {
@@ -131,14 +127,13 @@
         color: #fff;
     }
 
-    form{
-        width: 720px;
-        margin-left: -312px;
+    form {
+        width: 694px;
+        margin-left: -291px;
         display: flex;
         flex-direction: column;
         flex-wrap:nowrap;
         padding-bottom: 110px;
-
     }
     
     .label-form1, .label-form2 {
@@ -148,10 +143,9 @@
     }
 
     .first-form input {
-        width: 721px;
+        width: 680px;
         background-color: #181818;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
     }
     
     .first-form input::placeholder {
@@ -180,15 +174,19 @@
     .dt-submit {
         margin: 0;
         padding: 0;
-        margin-left: 50px;
+        margin-left: 30px;
         width: 620px;
         height: 51px;
         margin-top: 90px;
         margin-bottom: -25px;
     }
 
+    .dt-submit:hover {
+        opacity: 0.8!important;
+    }
+
     .types-content {
-        margin-left: 6px;
+        margin-left: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -198,13 +196,16 @@
     .types-item {
         margin-bottom: 259px;
     }
+
     .lists-box {
         margin-left:-1px ;
         margin-top: -37px;
     }
+
     .classes-title {
+        text-align: center;
         margin-top: -605px;
-        margin-left: 173px;
+        margin-left: -35px;
     }
 
     .room-images {
@@ -214,11 +215,12 @@
     }
 
     iframe{
-        max-width:600px!important;
+        max-width:621px!important;
     }
 
     .map {
-        margin-top: -683px;
+        margin-top: -690px;
+        margin-left: -1px;
     }
 
     .sixth-container-opasity {
@@ -229,7 +231,8 @@
     .questions-form-container {
         max-width: 769px;
         max-height: 445px;
-        padding-top: 33px;
+        margin-top: -367px;
+        padding-top: 300px;
         background: #181818;
         backdrop-filter: blur(20px);
     }
@@ -250,10 +253,12 @@
     .bt-qustion {
         max-width: 604px;
         margin-top: -80px;
+        margin-left: 53px;
     }
 
     .email-insta {
-        margin-top:5px;
+        margin-top:29px;
+        margin-left: -10px;
     }
 
     .checkbox-box3 {
@@ -267,7 +272,42 @@
         background: #fff;
     }
     .sixth-container-opasity h2 {
-        margin-top: 740px;
+        margin-top: 1005px;
+    }
+
+    .swipper-box_mobile {
+        width: 650px;
+        height: 500px;
+        display: block;
+        margin-left: -40px;
+    }
+
+    .vectors-mobile {
+        padding-top: 265px;
+        padding-bottom: 197px;
+        margin-top: -520px;
+    }
+    .vectors-mobile .swiper-button-next {
+        background-image: url("../images/next.orange.svg");
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 23px;
+        width: 54px!important;
+        height: 58px!important;
+        background-repeat: no-repeat;
+        display: block;
+        z-index: 20;
+    }
+    
+    .vectors-mobile .swiper-button-prev{
+        background-image: url("../images/prev.orange.svg");
+        background-size: contain;
+        margin-top: 0px;
+        margin-left: 23px;
+        width: 54px!important;
+        height: 58px!important;
+        background-repeat: no-repeat;
+        display: block;
     }
 }
 

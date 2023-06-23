@@ -90,6 +90,23 @@ new Swiper (".swiperPopup3", {
     },
 })
 
+new Swiper('.swiper-mobile', {
+  // Optional parameters
+  direction:'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
 /*-------------- Set LinkStyle ------------------*/
 
 const linkAdmiral = document.querySelector('.admiral');
