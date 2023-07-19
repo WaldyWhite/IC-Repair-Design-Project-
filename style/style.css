@@ -949,7 +949,6 @@ form {
     margin-top: -228px;
     padding-top: 33px;
     background: rgb(19, 19, 19);
-    backdrop-filter: blur(20px);
 }
 
 .qs-title {
