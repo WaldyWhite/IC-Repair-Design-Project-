@@ -13,7 +13,7 @@
 }
 
 /*---- Buttons ---*/
-.button {
+.btn {
     width:162px;
     height:37px ;
     background: #E3B873;
@@ -47,7 +47,7 @@
     color: rgba(7, 7, 7);
 }
  
-.button:hover, .video-play:hover {
+.btn:hover, .video-play:hover {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
@@ -132,12 +132,12 @@
 
 }
 
-.logo {
+.header__logo{
     width: 176px;
     padding-top: 2px;
 }
 
-.nav {
+.header-nav {
     width: 581;
     margin-left:61px;
     display: flex;
@@ -145,7 +145,7 @@
     justify-content: space-between;
 }
 
-.nav-list {
+.nav__list {
     padding-top: 2px;
     align-items: center;
     display: flex;
@@ -175,7 +175,7 @@
     color: #E3B873;
 
 }
-.tel a:hover {
+.nav-tel a:hover {
     text-decoration: underline;
 
 }
