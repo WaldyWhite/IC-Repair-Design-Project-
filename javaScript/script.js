@@ -94,6 +94,7 @@ new Swiper('.swiper-mobile', {
   // Optional parameters
   direction:'horizontal',
   loop: true,
+  speed: 1000,
 
   // Navigation arrows
   navigation: {
