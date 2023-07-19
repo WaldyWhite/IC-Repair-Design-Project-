@@ -6,6 +6,7 @@ let myImgSlider = new Swiper('.images-swiper', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 20,
+  speed: 2000,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -19,7 +20,7 @@ let myTextSlider = new Swiper('.text-swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  speed: 2000,
+  speed: 1000,
   spaceBetween: 330,
 
       // If we need pagination
